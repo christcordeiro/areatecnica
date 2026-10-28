@@ -1,0 +1,21 @@
+FOOTBALL BRASIL MANAGER — GERAR O EXECUTÁVEL WINDOWS
+
+Este pacote contém o projeto e um workflow do GitHub Actions para compilar o EXE na nuvem. Não é o EXE pronto ainda.
+
+PASSOS
+1. No GitHub, crie um repositório novo (pode ser privado).
+2. Na página do repositório, use Add file > Upload files.
+3. Extraia este ZIP no computador e envie o CONTEÚDO da pasta do projeto, incluindo a pasta .github. Não envie o ZIP dentro do repositório.
+4. Clique em Commit changes.
+5. Abra a aba Actions.
+6. Se aparecer a confirmação para permitir workflows, confirme.
+7. Abra “Gerar EXE do Football Brasil Manager” e clique em Run workflow > Run workflow.
+8. Aguarde o job terminar com marca verde.
+9. Abra a execução concluída; em Artifacts, baixe “Football-Brasil-Manager-Windows”.
+10. Extraia o ZIP baixado e execute “Football Brasil Manager.exe”.
+
+OBSERVAÇÕES
+- O EXE é compilado no Windows hospedado pelo GitHub Actions, então o computador usado para baixar não precisa ter Node.js ou npm.
+- O arquivo de artifact fica disponível por 14 dias; baixe e guarde o EXE.
+- Como o executável não está assinado, o Windows pode mostrar o aviso do SmartScreen. Só execute o arquivo que você mesmo gerou a partir deste repositório.
+- Este ZIP é o projeto com automação de build; não contém um EXE recém-compilado.

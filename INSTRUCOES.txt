@@ -1,0 +1,30 @@
+FOOTBALL BRASIL MANAGER — APLICATIVO PARA WINDOWS
+
+O que muda
+- O jogo roda em uma janela própria do Windows.
+- As carreiras são gravadas em um arquivo de dados do aplicativo, fora do localStorage do navegador.
+- O painel “Dados” permite exportar e importar um backup JSON.
+
+Para criar o executável no Windows
+1. Instale Node.js LTS: https://nodejs.org/
+2. Extraia esta pasta para um local normal do computador.
+3. Abra o Terminal/Prompt dentro da pasta extraída.
+4. Execute: npm install
+5. Execute: npm run dist
+6. O executável portátil será criado na pasta dist.
+
+Para iniciar sem gerar o executável
+- Dentro da pasta, execute: npm install
+- Depois: npm start
+
+Como preservar sua carreira atual
+1. Abra a versão antiga do jogo no navegador, onde sua carreira ainda aparece.
+2. Clique em “Exportar backup” no painel “Dados” e guarde o arquivo JSON.
+3. Abra o aplicativo instalado e clique em “Importar backup”.
+4. Selecione o JSON exportado. A página será recarregada com os dados importados.
+
+Importante
+- O código-fonte está incluído nesta pasta; este ZIP ainda não é o instalador pronto.
+- A primeira compilação exige internet para baixar as dependências do Electron.
+- Os dados do aplicativo ficam na pasta de dados do usuário do Electron. Não apague essa pasta se quiser manter as carreiras.
+- Faça backups regulares usando “Exportar backup”.

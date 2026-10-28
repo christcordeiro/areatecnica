@@ -1,0 +1,29 @@
+{
+  "name": "football-brasil-manager-desktop",
+  "version": "1.0.0",
+  "description": "Football Brasil Manager desktop app with file-backed local storage",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^34.3.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "br.com.areatecnica.footballbrasilmanager",
+    "productName": "Football Brasil Manager",
+    "files": [
+      "index.html",
+      "main.cjs",
+      "preload.cjs",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}
